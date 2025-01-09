@@ -193,7 +193,7 @@ blocks_top:
                     "style": "primary",
                   },
                   {
-                    "url": "/c",
+                    "url": "/categories",
                     "label": "Categories",
                     "style": "primary",
                   },
