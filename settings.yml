@@ -200,7 +200,7 @@ blocks_top:
                   {
                     "url": "/new-topic",
                     "label": "New Topic",
-                    "style": "third",
+                    "style": "uncontained",
                   },
                   {
                     "url": "/c/rescources/9",
