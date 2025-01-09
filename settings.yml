@@ -188,9 +188,19 @@ blocks_top:
               "ctas":
                 [
                   {
-                    "url": "/about",
-                    "label": "Learn more",
+                    "url": "/c/rescources/9",
+                    "label": "Rescources",
                     "style": "primary",
+                  },
+                  {
+                    "url": "/c/guides/10",
+                    "label": "Guides",
+                    "style": "secondary",
+                  },
+                  {
+                    "url": "/c/guides/10",
+                    "label": "Guides1",
+                    "style": "secondary",
                   },
                 ],
               "name": "banner",
