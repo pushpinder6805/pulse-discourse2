@@ -5,72 +5,119 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Workplace Issues Tiles</title>
+  <title>Resources Page</title>
   <style>
-    .resources.snipcss-aQjeH body {
+    body {
       font-family: Arial, sans-serif;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 50px;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #4CAF50;
       padding: 20px;
+      text-align: center;
+      color: white;
+      font-size: 24px;
+    }
+
+    .navigation {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin: 20px 0;
+    }
+
+    .navigation a {
+      text-decoration: none;
+      padding: 10px 20px;
+      background-color: #ddd;
+      border-radius: 5px;
+      color: #333;
+      transition: background-color 0.3s;
+    }
+
+    .navigation a:hover {
+      background-color: #bbb;
+    }
+
+    .section {
+      margin: 20px;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .section h2 {
+      margin-bottom: 15px;
+    }
+
+    .tiles {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
     }
 
     .tile {
-      width: 250px;
-      height: 250px;
-      background-size: cover;
-      background-position: center;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s;
+      background-color: #e0f7fa;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      transition: transform 0.3s, background-color 0.3s;
     }
 
     .tile:hover {
-      transform: scale(1.05);
+      transform: translateY(-5px);
+      background-color: #b2ebf2;
     }
 
-    .peer {
-      background-image: url('https://test.workspherepulse.com/uploads/default/original/1X/9ccc67ea96479b4a6d786837618afc774193f610.png');
-    }
-
-    .supervisor {
-      background-image: url('https://test.workspherepulse.com/uploads/default/original/1X/9c6467bd98de9a3e9f9054f22121e0b12aaf0795.png');
-    }
-
-    .employee {
-      background-image: url('https://test.workspherepulse.com/uploads/default/original/1X/9ead143c798f4f21656e8b6ece6d10456e204b58.png');
-    }
-
-    .team {
-      background-image: url('https://test.workspherepulse.com/uploads/default/original/1X/67a774e2aec004520e4639f73b85c7a8f65fbbba.png');
-    }
-
-    .other {
-      background-image: url('https://test.workspherepulse.com/uploads/default/original/1X/dc182aa3ab5a71dd2bacbd93724ebe9d2cdb9795.png');
+    .tile h3 {
+      margin: 0;
+      font-size: 18px;
     }
   </style>
 </head>
 <body>
-  <a href="https://test.workspherepulse.com/c/peer-issues/5">
-    <div class="tile peer"></div>
-  </a>
-  <a href="https://test.workspherepulse.com/c/supervisor-issues/6">
-    <div class="tile supervisor"></div>
-  </a>
-  <a href="https://test.workspherepulse.com/c/senior-management-issues/7">
-    <div class="tile employee"></div>
-  </a>
-  <a href="https://test.workspherepulse.com/c/general-management-issues/8">
-    <div class="tile team"></div>
-  </a>
-  <a href="https://test.workspherepulse.com/c/other-workplace-topics/23">
-    <div class="tile other"></div>
-  </a>
+
+<header>
+  Resources Page
+</header>
+
+<div class="navigation">
+  <a href="#mental-wellness">Mental Wellness at Work</a>
+  <a href="#emotional-wellness">Emotional Wellness at Work</a>
+  <a href="#related-podcasts">Related Podcasts/Articles</a>
+</div>
+
+<div id="mental-wellness" class="section">
+  <h2>Mental Wellness Resources</h2>
+  <div class="tiles">
+    <div class="tile"><h3>Manage Stress</h3></div>
+    <div class="tile"><h3>Work-Life Balance</h3></div>
+    <div class="tile"><h3>Support</h3></div>
+    <div class="tile"><h3>Working Environment</h3></div>
+  </div>
+</div>
+
+<div id="emotional-wellness" class="section">
+  <h2>Emotional Wellness Resources</h2>
+  <div class="tiles">
+    <div class="tile"><h3>Psychological Safety</h3></div>
+    <div class="tile"><h3>Positive Work Relationships</h3></div>
+    <div class="tile"><h3>Meaningful Work</h3></div>
+    <div class="tile"><h3>Support</h3></div>
+  </div>
+</div>
+
+<div id="related-podcasts" class="section">
+  <h2>Other Related Podcasts/Articles</h2>
+  <p>More categories will be added later</p>
+</div>
+
 </body>
-
 </html>
-
 
   </section>
 {{/if}}
